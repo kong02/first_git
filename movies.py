@@ -35,6 +35,9 @@ for rank,info in movie_ranking.items():
 #학생 2
 
 import matplotlib.pyplot as plt
+from matplotlib import font_manager, rc
+font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
+rc('font',family=font_name)
 x=[1,2,3,4,5,6,7,8,9,10]
 movie = ["스파이럴","더 스파이","내겐 너무 소중한 너","극장판 귀멸의 칼날","비와 당신의 이야기","크루즈 패밀리","노매드랜드","아들의 이름으로","미나리","아이들은 즐겁다"]
 plt.xticks(x,movie,rotation='vertical')
