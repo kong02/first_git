@@ -32,3 +32,16 @@ for i in range(len(title_list)):
 for rank,info in movie_ranking.items():
     print(rank,"-",info)
 
+#학생 2
+
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5,6,7,8,9,10]
+movie = ["스파이럴","더 스파이","내겐 너무 소중한 너","극장판 귀멸의 칼날","비와 당신의 이야기","크루즈 패밀리","노매드랜드","아들의 이름으로","미나리","아이들은 즐겁다"]
+plt.xticks(x,movie,rotation='vertical')
+y=[7.93,8.52,9.90,9.30,6.73,9.21,8.42,8.28,7.70,9.43]
+plt.bar(x,y)
+plt.suptitle('movie review grade')
+plt.xlabel('영화')
+plt.ylabel('평점')
+plt.legend()
+plt.show()
